@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import List from "./List";
 import Form from "./Form";
+import './style.css'
 
 function Contacts() {
   const [contacts, setContacts] = useState([
@@ -13,10 +14,14 @@ function Contacts() {
   }, [contacts]);
 
   return (
-    <div>
+    <div id="contacts-app" >
+      <div target="_blank" className="app-title">
+      <h1>Contacts</h1>
       <List contacts={contacts} />
       <Form contacts={contacts} addContacts={setContacts} />
     </div>
+    </div>
+    
   );
 }
 

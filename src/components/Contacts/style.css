@@ -1,0 +1,114 @@
+#contacts-app {
+  max-width: 400px;
+  min-height: 75vh;
+  width: 100%;
+  background-color: #512da8;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
+  border-color: #673ab7;
+}
+
+h1,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.app-title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.list {
+  margin: 20px 0;
+  max-height: 28vh;
+  overflow: overlay;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.list li {
+  background-color: #673ab7;
+  padding: 8px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  transition: all 350ms linear;
+}
+
+.list li:hover {
+  background-color: #512da8;
+  transition: all 350ms linear;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+.btn button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #673ab7;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 2.5vmin;
+  border-color: #673ab7;
+  outline: none;
+  transition: all 350ms linear;
+}
+
+.btn button:hover {
+  transition: all 350ms linear;
+  background-color: #512da8;
+}
+
+.totalContacts {
+  padding-bottom: 12px;
+  font-size: 3vmin;
+}
+
+.formInput {
+  margin-bottom: 12px;
+}
+
+.creator {
+  display: flex;
+  justify-content: center;
+}
+
+.creator a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px;
+  transition: all 350ms linear;
+}
+
+.creator a:hover {
+  color: #bdbdbd;
+  transition: all 350ms linear;
+}
